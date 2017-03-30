@@ -186,6 +186,9 @@ Style/ExtraSpacing:
 
 Style/FileName:
   Enabled: true
+  Exclude:
+    - '**/Gemfile'
+    - '**/*.rake'
 
 Style/FrozenStringLiteralComment:
   Enabled: true
@@ -597,6 +600,8 @@ Metrics/CyclomaticComplexity:
 Metrics/LineLength:
   Enabled: true
   Max: 200
+  Exclude:
+    - '**/*.gemspec'
 
 Metrics/MethodLength:
   Enabled: true
@@ -604,6 +609,8 @@ Metrics/MethodLength:
 
 Metrics/BlockLength:
   Enabled: true
+  Exclude:
+    - '**/*.gemspec'
 
 Metrics/ParameterLists:
   Enabled: true
