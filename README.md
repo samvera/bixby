@@ -2,6 +2,7 @@ Bixby: I'd buy that for a dollar!
 =================================
 
 [![Apache 2.0 License](http://img.shields.io/badge/APACHE2-license-blue.svg)](./LICENSE)
+[![Gem Version](https://badge.fury.io/rb/bixby.svg)](https://badge.fury.io/rb/bixby)
 
 <p align="left">
   <img src="https://raw.githubusercontent.com/curationexperts/hycop/master/logo/murphy.jpg" alt="Murphy Sketch"/>
