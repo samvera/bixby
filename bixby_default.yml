@@ -135,6 +135,8 @@ Style/FileName:
   Exclude:
     - '**/Gemfile'
     - '**/*.rake'
+    - 'Capfile'
+    - 'config/deploy/*'
 
 Style/FrozenStringLiteralComment:
   Enabled: true
