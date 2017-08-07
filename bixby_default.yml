@@ -595,6 +595,8 @@ Metrics/BlockNesting:
 
 Metrics/ClassLength:
   Enabled: true
+  Exclude:
+    - '**/*/catalog_controller.rb'
 
 Metrics/ModuleLength:
   Enabled: true
@@ -616,6 +618,8 @@ Metrics/BlockLength:
   Enabled: true
   Exclude:
     - '**/*.gemspec'
+    - 'config/**/*'
+    - '**/*/catalog_controller.rb'
 
 Metrics/ParameterLists:
   Enabled: true
