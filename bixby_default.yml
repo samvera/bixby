@@ -16,9 +16,6 @@ inherit_from:
 
 # These are all the cops that are enabled in the default configuration.
 
-Style/AccessorMethodName:
-  Enabled: true
-
 Style/Alias:
   Enabled: true
 
@@ -29,9 +26,6 @@ Style/ArrayJoin:
   Enabled: true
 
 Style/AsciiComments:
-  Enabled: true
-
-Style/AsciiIdentifiers:
   Enabled: true
 
 Style/Attr:
@@ -56,9 +50,6 @@ Style/CaseEquality:
   Enabled: true
 
 Style/CharacterLiteral:
-  Enabled: true
-
-Style/ClassAndModuleCamelCase:
   Enabled: true
 
 Style/ClassCheck:
@@ -89,9 +80,6 @@ Style/CommentAnnotation:
   Enabled: true
 
 Style/ConditionalAssignment:
-  Enabled: true
-
-Style/ConstantName:
   Enabled: true
 
 Style/DefWithParentheses:
@@ -129,14 +117,6 @@ Style/EndBlock:
 
 Style/EvenOdd:
   Enabled: true
-
-Style/FileName:
-  Enabled: true
-  Exclude:
-    - '**/Gemfile'
-    - '**/*.rake'
-    - 'Capfile'
-    - 'config/deploy/*'
 
 Style/FrozenStringLiteralComment:
   Enabled: true
@@ -190,9 +170,6 @@ Style/MethodCallWithoutArgsParentheses:
   Enabled: true
 
 Style/MethodDefParentheses:
-  Enabled: true
-
-Style/MethodName:
   Enabled: true
 
 Style/MethodMissing:
@@ -262,9 +239,6 @@ Style/NumericPredicate:
 Style/OneLineConditional:
   Enabled: true
 
-Style/OpMethod:
-  Enabled: true
-
 Style/OptionalArguments:
   Enabled: true
 
@@ -281,9 +255,6 @@ Style/PercentQLiterals:
   Enabled: true
 
 Style/PerlBackrefs:
-  Enabled: true
-
-Style/PredicateName:
   Enabled: true
 
 Style/PreferredHashMethods:
@@ -379,12 +350,6 @@ Style/TrailingUnderscoreVariable:
   Enabled: true
 
 Style/VariableInterpolation:
-  Enabled: true
-
-Style/VariableName:
-  Enabled: true
-
-Style/VariableNumber:
   Enabled: true
 
 Style/WhenThen:
@@ -582,6 +547,43 @@ Layout/TrailingBlankLines:
   Enabled: true
 
 Layout/TrailingWhitespace:
+  Enabled: true
+
+#################### Naming ################################
+
+Naming/AccessorMethodName:
+  Enabled: true
+
+Naming/AsciiIdentifiers:
+  Enabled: true
+
+Naming/BinaryOperatorParameter:
+  Enabled: true
+
+Naming/ClassAndModuleCamelCase:
+  Enabled: true
+
+Naming/ConstantName:
+  Enabled: true
+
+Naming/FileName:
+  Enabled: true
+  Exclude:
+    - '**/Gemfile'
+    - '**/*.rake'
+    - 'Capfile'
+    - 'config/deploy/*'
+
+Naming/MethodName:
+  Enabled: true
+
+Naming/PredicateName:
+  Enabled: true
+
+Naming/VariableName:
+  Enabled: true
+
+Naming/VariableNumber:
   Enabled: true
 
 #################### Metrics ###############################
