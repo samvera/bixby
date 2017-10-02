@@ -109,7 +109,7 @@ RSpec/NamedSubject:
 
 RSpec/NestedGroups:
   Enabled: true
-  Max: 3
+  Max: 5
 
 RSpec/NotToNot:
   EnforcedStyle: not_to
