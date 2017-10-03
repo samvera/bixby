@@ -25,6 +25,12 @@ inherit_gem:
   bixby: bixby_default.yml
 ```
 
+## Versioning & Dependencies
+
+This project depends on `rubocop` and `rubocop-rspec`. It supports versions of those gems pessimistically. Beginning with release `1.0.0`, we will periodically add support for new versions of the dependencies and manage the included cops. When compatibility breaks, the major version of `bixby` will be bumped.
+
+Our goal is to insulate downstream projects from breakage due to pre-1.0 version updates in `rubocop`.
+
 ## License
 
 Bixby is available under [the Apache 2.0 license](LICENSE.md).
