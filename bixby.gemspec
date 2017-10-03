@@ -15,6 +15,6 @@ Gem::Specification.new do |spec|
   spec.version       = '0.3.0'
   spec.license       = 'Apache-2.0'
 
-  spec.add_dependency 'rubocop',       '~> 0.49', '<= 0.50.0'
-  spec.add_dependency 'rubocop-rspec', '~> 1.15', '<= 1.18.0'
+  spec.add_dependency 'rubocop',       '0.50.0'
+  spec.add_dependency 'rubocop-rspec', '1.18.0'
 end
