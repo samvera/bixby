@@ -714,9 +714,6 @@ Lint/IneffectiveAccessModifier:
 Lint/InheritException:
   Enabled: true
 
-Lint/InvalidCharacterLiteral:
-  Enabled: true
-
 Lint/LiteralInCondition:
   Enabled: true
 
