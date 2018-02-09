@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.name          = 'bixby'
   spec.require_paths = ['lib']
 
-  spec.version       = '0.4.0'
+  spec.version       = '1.0.0-rc1'
   spec.license       = 'Apache-2.0'
 
   spec.add_dependency 'rubocop',       '~> 0.50', '<= 0.52.1'
