@@ -8,6 +8,7 @@ AllCops:
   Exclude:
     - 'db/**/*'
     - 'script/**/*'
+    - 'tmp/**/*'
     - 'vendor/**/*'
 
 inherit_from:
@@ -525,7 +526,10 @@ Layout/SpaceInsideArrayPercentLiteral:
 Layout/SpaceInsidePercentLiteralDelimiters:
   Enabled: true
 
-Layout/SpaceInsideBrackets:
+Layout/SpaceInsideReferenceBrackets:
+  Enabled: true
+
+Layout/SpaceInsideArrayLiteralBrackets:
   Enabled: true
 
 Layout/SpaceInsideHashLiteralBraces:
@@ -557,7 +561,7 @@ Naming/AccessorMethodName:
 Naming/AsciiIdentifiers:
   Enabled: true
 
-Naming/BinaryOperatorParameter:
+Naming/BinaryOperatorParameterName:
   Enabled: true
 
 Naming/ClassAndModuleCamelCase:
@@ -714,7 +718,7 @@ Lint/IneffectiveAccessModifier:
 Lint/InheritException:
   Enabled: true
 
-Lint/LiteralInCondition:
+Lint/LiteralAsCondition:
   Enabled: true
 
 Lint/LiteralInInterpolation:
