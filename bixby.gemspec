@@ -1,5 +1,3 @@
-# -*- encoding: utf-8 -*-
-
 Gem::Specification.new do |spec|
   spec.authors       = ['Tom Johnson']
   spec.email         = ['tom@curationexperts.com']
@@ -12,9 +10,9 @@ Gem::Specification.new do |spec|
   spec.name          = 'bixby'
   spec.require_paths = ['lib']
 
-  spec.version       = '0.3.0'
+  spec.version       = '0.4.0'
   spec.license       = 'Apache-2.0'
 
-  spec.add_dependency 'rubocop',       '0.50.0'
-  spec.add_dependency 'rubocop-rspec', '1.18.0'
+  spec.add_dependency 'rubocop',       '~> 0.50', '<= 0.52.1'
+  spec.add_dependency 'rubocop-rspec', '~> 1.22', '<= 1.22.2'
 end

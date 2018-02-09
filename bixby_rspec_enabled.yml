@@ -45,13 +45,6 @@ RSpec/ExpectActual:
 RSpec/ExpectOutput:
   Enabled: true
 
-RSpec/FilePath:
-  Enabled: true
-  CustomTransform:
-    RuboCop: rubocop
-    RSpec: rspec
-  IgnoreMethods: false
-
 RSpec/Focus:
   Enabled: true
 
@@ -99,10 +92,6 @@ RSpec/MessageSpies:
 
 RSpec/MultipleDescribes:
   Enabled: true
-
-RSpec/MultipleExpectations:
-  Enabled: true
-  Max: 1
 
 RSpec/NamedSubject:
   Enabled: true
