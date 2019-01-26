@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.authors       = ['Tom Johnson']
-  spec.email         = ['tom@curationexperts.com']
+  spec.email         = ['tomjohnson@ucsb.edu']
   spec.description   = 'A Style Configuration for RuboCop'
   spec.summary       = 'This is the recommended style configuration for use ' \
                        'by Samvera Community projects.'
