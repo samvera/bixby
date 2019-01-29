@@ -1,10 +1,7 @@
 AllCops:
-  TargetRubyVersion: 2.1
+  TargetRubyVersion: 2.3
   DisabledByDefault: true
   DisplayCopNames: true
-  Include:
-    - '**/Rakefile'
-    - '**/config.ru'
   Exclude:
     - 'db/**/*'
     - 'script/**/*'
@@ -14,8 +11,6 @@ AllCops:
 inherit_from:
   - bixby_rails_enabled.yml
   - bixby_rspec_enabled.yml
-
-# These are all the cops that are enabled in the default configuration.
 
 Style/Alias:
   Enabled: true
@@ -122,9 +117,6 @@ Style/EvenOdd:
 Style/FrozenStringLiteralComment:
   Enabled: true
 
-Style/FlipFlop:
-  Enabled: true
-
 Style/For:
   Enabled: true
 
@@ -173,7 +165,10 @@ Style/MethodCallWithoutArgsParentheses:
 Style/MethodDefParentheses:
   Enabled: true
 
-Style/MethodMissing:
+Style/MethodMissingSuper:
+  Enabled: true
+
+Style/MissingRespondToMissing:
   Enabled: true
 
 Style/ModuleFunction:
@@ -328,7 +323,10 @@ Style/TernaryParentheses:
 Style/TrailingCommaInArguments:
   Enabled: true
 
-Style/TrailingCommaInLiteral:
+Style/TrailingCommaInArrayLiteral:
+  Enabled: true
+
+Style/TrailingCommaInHashLiteral:
   Enabled: true
 
 Style/TrivialAccessors:
@@ -376,6 +374,9 @@ Layout/AlignHash:
 Layout/AlignParameters:
   Enabled: true
 
+Layout/BlockAlignment:
+  Enabled: true
+
 Layout/BlockEndNewline:
   Enabled: true
 
@@ -385,13 +386,22 @@ Layout/CaseIndentation:
 Layout/ClosingParenthesisIndentation:
   Enabled: true
 
+Layout/ConditionPosition:
+  Enabled: true
+
 Layout/CommentIndentation:
+  Enabled: true
+
+Layout/DefEndAlignment:
   Enabled: true
 
 Layout/DotPosition:
   Enabled: true
 
 Layout/ElseAlignment:
+  Enabled: true
+
+Layout/EndAlignment:
   Enabled: true
 
 Layout/EmptyLineBetweenDefs:
@@ -645,19 +655,10 @@ Lint/AmbiguousRegexpLiteral:
 Lint/AssignmentInCondition:
   Enabled: true
 
-Lint/BlockAlignment:
-  Enabled: true
-
 Lint/CircularArgumentReference:
   Enabled: true
 
-Lint/ConditionPosition:
-  Enabled: true
-
 Lint/Debugger:
-  Enabled: true
-
-Lint/DefEndAlignment:
   Enabled: true
 
 Lint/DeprecatedClassMethods:
@@ -691,13 +692,13 @@ Lint/EmptyInterpolation:
 Lint/EmptyWhen:
   Enabled: true
 
-Lint/EndAlignment:
-  Enabled: true
-
 Lint/EndInMethod:
   Enabled: true
 
 Lint/EnsureReturn:
+  Enabled: true
+
+Lint/FlipFlop:
   Enabled: true
 
 Lint/FloatOutOfRange:
@@ -776,9 +777,6 @@ Lint/UnderscorePrefixedVariableName:
 Lint/UnifiedInteger:
   Enabled: true
 
-Lint/UnneededDisable:
-  Enabled: true
-
 Lint/UnneededSplatExpansion:
   Enabled: true
 
@@ -855,10 +853,6 @@ Performance/FlatMap:
   # `flatten` being called without any parameters.
   # This can be dangerous since `flat_map` will only flatten 1 level, and
   # `flatten` without any parameters can flatten multiple levels.
-
-Performance/HashEachMethods:
-  Enabled: true
-  AutoCorrect: false
 
 Performance/LstripRstrip:
   Enabled: true
