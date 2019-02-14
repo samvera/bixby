@@ -122,9 +122,6 @@ Style/EvenOdd:
 Style/FrozenStringLiteralComment:
   Enabled: true
 
-Style/FlipFlop:
-  Enabled: true
-
 Style/For:
   Enabled: true
 
@@ -173,7 +170,10 @@ Style/MethodCallWithoutArgsParentheses:
 Style/MethodDefParentheses:
   Enabled: true
 
-Style/MethodMissing:
+Style/MethodMissingSuper:
+  Enabled: true
+
+Style/MissingRespondToMissing:
   Enabled: true
 
 Style/ModuleFunction:
@@ -328,7 +328,10 @@ Style/TernaryParentheses:
 Style/TrailingCommaInArguments:
   Enabled: true
 
-Style/TrailingCommaInLiteral:
+Style/TrailingCommaInArrayLiteral:
+  Enabled: true
+
+Style/TrailingCommaInHashLiteral:
   Enabled: true
 
 Style/TrivialAccessors:
@@ -376,6 +379,9 @@ Layout/AlignHash:
 Layout/AlignParameters:
   Enabled: true
 
+Layout/BlockAlignment:
+  Enabled: true
+
 Layout/BlockEndNewline:
   Enabled: true
 
@@ -385,7 +391,13 @@ Layout/CaseIndentation:
 Layout/ClosingParenthesisIndentation:
   Enabled: true
 
+Layout/ConditionPosition:
+  Enabled: true
+
 Layout/CommentIndentation:
+  Enabled: true
+
+Layout/DefEndAlignment:
   Enabled: true
 
 Layout/DotPosition:
@@ -413,6 +425,9 @@ Layout/EmptyLinesAroundModuleBody:
   Enabled: true
 
 Layout/EmptyLinesAroundMethodBody:
+  Enabled: true
+
+Layout/EndAlignment:
   Enabled: true
 
 Layout/EndOfLine:
@@ -645,19 +660,10 @@ Lint/AmbiguousRegexpLiteral:
 Lint/AssignmentInCondition:
   Enabled: true
 
-Lint/BlockAlignment:
-  Enabled: true
-
 Lint/CircularArgumentReference:
   Enabled: true
 
-Lint/ConditionPosition:
-  Enabled: true
-
 Lint/Debugger:
-  Enabled: true
-
-Lint/DefEndAlignment:
   Enabled: true
 
 Lint/DeprecatedClassMethods:
@@ -691,13 +697,13 @@ Lint/EmptyInterpolation:
 Lint/EmptyWhen:
   Enabled: true
 
-Lint/EndAlignment:
-  Enabled: true
-
 Lint/EndInMethod:
   Enabled: true
 
 Lint/EnsureReturn:
+  Enabled: true
+
+Lint/FlipFlop:
   Enabled: true
 
 Lint/FloatOutOfRange:
