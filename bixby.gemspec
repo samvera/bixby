@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.authors       = ['Tom Johnson']
-  spec.email         = ['tom@curationexperts.com']
+  spec.email         = ['johnson.tom@gmail.com']
   spec.description   = 'A Style Configuration for RuboCop'
   spec.summary       = 'This is the recommended style configuration for use ' \
                        'by Samvera Community projects.'
@@ -10,9 +10,11 @@ Gem::Specification.new do |spec|
   spec.name          = 'bixby'
   spec.require_paths = ['lib']
 
-  spec.version       = '2.0.0-beta1'
+  spec.version       = '2.0.0'
   spec.license       = 'Apache-2.0'
 
   spec.add_dependency 'rubocop',       '0.63.1'
   spec.add_dependency 'rubocop-rspec', '1.31.0'
+
+  spec.add_development_dependency 'github_changelog_generator'
 end

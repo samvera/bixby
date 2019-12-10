@@ -35,6 +35,18 @@ Our goal is to insulate downstream projects from breakage due to pre-1.0 version
 
 Bixby is available under [the Apache 2.0 license](LICENSE.md).
 
+## Releasing
+
+1. `bundle install`
+1. Increase the version number in `bixby.gemspec`
+1. Increase the same version number in `.github_changelog_generator`
+1. Update `CHANGELOG.md` by running this command:
+  ```
+  github_changelog_generator --user samvera-labs --project bixby --token YOUR_GITHUB_TOKEN_HERE
+  ```
+1. Commit these changes to the master branch
+1. Run `rake release`
+
 ## Acknowledgments
 
 This software has been developed by and is brought to you by the Samvera community.  Learn more at the
