@@ -1,5 +1,7 @@
+require: rubocop-performance
+
 AllCops:
-  TargetRubyVersion: 2.3
+  TargetRubyVersion: 2.6
   DisabledByDefault: true
   DisplayCopNames: true
   Exclude:
@@ -38,9 +40,6 @@ Style/BlockComments:
   Enabled: true
 
 Style/BlockDelimiters:
-  Enabled: true
-
-Style/BracesAroundHashParameters:
   Enabled: true
 
 Style/CaseEquality:
@@ -281,7 +280,13 @@ Style/RedundantReturn:
 Style/RedundantSelf:
   Enabled: true
 
+Style/RedundantSortBy:
+  Enabled: true
+
 Style/RescueModifier:
+  Enabled: true
+
+Style/Sample:
   Enabled: true
 
 Style/SafeNavigation:
@@ -336,13 +341,13 @@ Style/TrivialAccessors:
 Style/UnlessElse:
   Enabled: true
 
-Style/UnneededCapitalW:
+Style/RedundantCapitalW:
   Enabled: true
 
-Style/UnneededInterpolation:
+Style/RedundantInterpolation:
   Enabled: true
 
-Style/UnneededPercentQ:
+Style/RedundantPercentQ:
   Enabled: true
 
 Style/TrailingUnderscoreVariable:
@@ -366,13 +371,13 @@ Style/ZeroLengthPredicate:
 
 #################### Layout ###############################
 
-Layout/AlignArray:
+Layout/ArrayAlignment:
   Enabled: true
 
-Layout/AlignHash:
+Layout/HashAlignment:
   Enabled: true
 
-Layout/AlignParameters:
+Layout/ParameterAlignment:
   Enabled: true
 
 Layout/BlockAlignment:
@@ -432,6 +437,9 @@ Layout/EndOfLine:
 Layout/ExtraSpacing:
   Enabled: true
 
+Layout/IndentationStyle:
+  Enabled: true
+
 Layout/InitialIndentation:
   Enabled: true
 
@@ -442,18 +450,18 @@ Layout/IndentationConsistency:
   SupportedStyles:
     - normal
     - rails
-  EnforcedStyle: rails
+  EnforcedStyle: normal
 
 Layout/IndentationWidth:
   Enabled: true
 
-Layout/IndentArray:
+Layout/FirstArrayElementIndentation:
   Enabled: true
 
-Layout/IndentAssignment:
+Layout/AssignmentIndentation:
   Enabled: true
 
-Layout/IndentHash:
+Layout/FirstHashElementIndentation:
   Enabled: true
 
 Layout/SpaceInLambdaLiteral:
@@ -461,6 +469,12 @@ Layout/SpaceInLambdaLiteral:
 
 Layout/LeadingCommentSpace:
   Enabled: true
+
+Layout/LineLength:
+  Enabled: true
+  Max: 200
+  Exclude:
+    - '**/*.gemspec'
 
 Layout/MultilineArrayBraceLayout:
   Enabled: true
@@ -555,10 +569,7 @@ Layout/SpaceInsideRangeLiteral:
 Layout/SpaceInsideStringInterpolation:
   Enabled: true
 
-Layout/Tab:
-  Enabled: true
-
-Layout/TrailingBlankLines:
+Layout/TrailingEmptyLines:
   Enabled: true
 
 Layout/TrailingWhitespace:
@@ -621,12 +632,6 @@ Metrics/ModuleLength:
 Metrics/CyclomaticComplexity:
   Enabled: true
 
-Metrics/LineLength:
-  Enabled: true
-  Max: 200
-  Exclude:
-    - '**/*.gemspec'
-
 Metrics/MethodLength:
   Enabled: true
   Max: 14
@@ -671,7 +676,7 @@ Lint/DuplicateCaseCondition:
 Lint/DuplicateMethods:
   Enabled: true
 
-Lint/DuplicatedKey:
+Lint/DuplicateHashKey:
   Enabled: true
 
 Lint/EachWithObjectArgument:
@@ -693,7 +698,7 @@ Lint/EmptyInterpolation:
 Lint/EmptyWhen:
   Enabled: true
 
-Lint/EndInMethod:
+Style/EndBlock:
   Enabled: true
 
 Lint/EnsureReturn:
@@ -708,7 +713,7 @@ Lint/FloatOutOfRange:
 Lint/FormatParameterMismatch:
   Enabled: true
 
-Lint/HandleExceptions:
+Lint/SuppressedException:
   Enabled: true
 
 Lint/ImplicitStringConcatenation:
@@ -729,7 +734,7 @@ Lint/LiteralInInterpolation:
 Lint/Loop:
   Enabled: true
 
-Lint/MultipleCompare:
+Lint/MultipleComparison:
   Enabled: true
 
 Lint/NestedMethodDefinition:
@@ -769,7 +774,7 @@ Lint/ShadowedException:
 Lint/ShadowingOuterLocalVariable:
   Enabled: true
 
-Lint/StringConversionInInterpolation:
+Lint/RedundantStringCoercion:
   Enabled: true
 
 Lint/UnderscorePrefixedVariableName:
@@ -778,7 +783,7 @@ Lint/UnderscorePrefixedVariableName:
 Lint/UnifiedInteger:
   Enabled: true
 
-Lint/UnneededSplatExpansion:
+Lint/RedundantSplatExpansion:
   Enabled: true
 
 Lint/UnusedBlockArgument:
@@ -822,8 +827,8 @@ Performance/Count:
   # This cop has known compatibility issues with `ActiveRecord` and other
   # frameworks. ActiveRecord's `count` ignores the block that is passed to it.
   # For more information, see the documentation in the cop itself.
-  # If you understand the known risk, you can disable `SafeMode`.
-  SafeMode: true
+  # If you understand the known risk, you can disable `SafeAutoCorrect`.
+  SafeAutoCorrect: true
   Enabled: true
 
 Performance/Detect:
@@ -831,7 +836,7 @@ Performance/Detect:
   # frameworks. `ActiveRecord` does not implement a `detect` method and `find`
   # has its own meaning. Correcting `ActiveRecord` methods with this cop
   # should be considered unsafe.
-  SafeMode: true
+  SafeAutoCorrect: true
   Enabled: true
 
 Performance/DoubleStartEndWith:
@@ -855,9 +860,6 @@ Performance/FlatMap:
   # This can be dangerous since `flat_map` will only flatten 1 level, and
   # `flatten` without any parameters can flatten multiple levels.
 
-Performance/LstripRstrip:
-  Enabled: true
-
 Performance/RangeInclude:
   Enabled: true
 
@@ -870,16 +872,10 @@ Performance/RedundantMatch:
 Performance/RedundantMerge:
   Enabled: true
 
-Performance/RedundantSortBy:
-  Enabled: true
-
 Performance/RegexpMatch:
   Enabled: true
 
 Performance/ReverseEach:
-  Enabled: true
-
-Performance/Sample:
   Enabled: true
 
 Performance/Size:
