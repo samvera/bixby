@@ -1,8 +1,17 @@
 # Changelog
 
-## [2.0.0](https://github.com/samvera-labs/bixby/tree/2.0.0) (2019-12-10)
+## [2.1.0](https://github.com/samvera-labs/bixby/tree/2.1.0) (2020-06-09)
 
-[Full Changelog](https://github.com/samvera-labs/bixby/compare/v2.0.0.pre.beta1...2.0.0)
+[Full Changelog](https://github.com/samvera-labs/bixby/compare/v2.0.0...2.1.0)
+
+**Merged pull requests:**
+
+- Upgrade rubocop and dependencies [\#35](https://github.com/samvera-labs/bixby/pull/35) ([bess](https://github.com/bess))
+- Prep for 2.0 release [\#31](https://github.com/samvera-labs/bixby/pull/31) ([bess](https://github.com/bess))
+
+## [v2.0.0](https://github.com/samvera-labs/bixby/tree/v2.0.0) (2019-12-10)
+
+[Full Changelog](https://github.com/samvera-labs/bixby/compare/v2.0.0.pre.beta1...v2.0.0)
 
 **Closed issues:**
 
