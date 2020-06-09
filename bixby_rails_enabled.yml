@@ -1,4 +1,6 @@
 ---
+require: rubocop-rails
+
 Rails:
   Enabled: true
 
@@ -76,4 +78,3 @@ Rails/SkipsModelValidations:
 
 Rails/Validation:
   Enabled: true
-

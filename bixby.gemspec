@@ -13,8 +13,10 @@ Gem::Specification.new do |spec|
   spec.version       = '2.0.0'
   spec.license       = 'Apache-2.0'
 
-  spec.add_dependency 'rubocop',       '0.63.1'
-  spec.add_dependency 'rubocop-rspec', '1.31.0'
+  spec.add_dependency 'rubocop',       '0.85.1'
+  spec.add_dependency 'rubocop-rails'
+  spec.add_dependency 'rubocop-rspec'
+  spec.add_dependency 'rubocop-performance'
 
   spec.add_development_dependency 'github_changelog_generator'
 end
