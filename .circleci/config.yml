@@ -1,0 +1,55 @@
+version: 2.1
+
+orbs:
+  samvera: samvera/circleci-orb@0
+
+jobs:
+  bundle_lint_test:
+    parameters:
+      ruby_version:
+        type: string
+      project:
+        type: string
+      bundler_version:
+        type: string
+        default: 1.17.3
+
+    executor:
+      name: 'samvera/ruby'
+      ruby_version: << parameters.ruby_version >>
+
+    steps:
+      - samvera/cached_checkout
+
+      - samvera/bundle_for_gem:
+          ruby_version: << parameters.ruby_version >>
+          bundler_version: << parameters.bundler_version >>
+          project: << parameters.project >>
+          cache_version: '2'
+
+      - samvera/rubocop
+
+workflows:
+  version: 2
+  ci:
+    jobs:
+      - bundle_lint_test:
+          project: bixby
+          name: ruby2-4
+          ruby_version: 2.4.10
+
+      - bundle_lint_test:
+          project: bixby
+          name: ruby2-5
+          ruby_version: 2.5.8
+
+      - bundle_lint_test:
+          project: bixby
+          name: ruby2-6
+          ruby_version: 2.6.6
+
+      - bundle_lint_test:
+          project: bixby
+          name: ruby2-7
+          ruby_version: 2.7.1
+
