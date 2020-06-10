@@ -40,6 +40,9 @@ Rails/HttpPositionalArguments:
     - 'spec/**/*'
     - 'test/**/*'
 
+Rails/LexicallyScopedActionFilter:
+  Enabled: false
+
 Rails/NotNullColumn:
   Enabled: true
 
