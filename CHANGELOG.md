@@ -1,8 +1,16 @@
 # Changelog
 
-## [3.0.0.pre3](https://github.com/samvera-labs/bixby/tree/3.0.0.pre3) (2020-06-10)
+## [3.0.0](https://github.com/samvera-labs/bixby/tree/3.0.0) (2020-06-10)
 
-[Full Changelog](https://github.com/samvera-labs/bixby/compare/v3.0.0.pre2...3.0.0.pre3)
+[Full Changelog](https://github.com/samvera-labs/bixby/compare/v3.0.0.pre3...3.0.0)
+
+**Merged pull requests:**
+
+- Prep for 3.0.0.pre3 release [\#42](https://github.com/samvera-labs/bixby/pull/42) ([bess](https://github.com/bess))
+
+## [v3.0.0.pre3](https://github.com/samvera-labs/bixby/tree/v3.0.0.pre3) (2020-06-10)
+
+[Full Changelog](https://github.com/samvera-labs/bixby/compare/v3.0.0.pre2...v3.0.0.pre3)
 
 **Merged pull requests:**
 
