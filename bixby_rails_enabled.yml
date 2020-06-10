@@ -24,6 +24,7 @@ Rails/Exit:
 
 Rails/FilePath:
   Enabled: true
+  EnforcedStyle: arguments
 
 Rails/FindBy:
   Enabled: true
