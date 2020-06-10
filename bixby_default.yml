@@ -447,9 +447,7 @@ Layout/FirstParameterIndentation:
   Enabled: true
 
 Layout/IndentationConsistency:
-  SupportedStyles:
-    - normal
-    - rails
+  Enabled: true
   EnforcedStyle: normal
 
 Layout/IndentationWidth:
