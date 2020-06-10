@@ -35,6 +35,9 @@ Rails/FindEach:
 Rails/HasAndBelongsToMany:
   Enabled: true
 
+Rails/HelperInstanceVariable:
+  Enabled: false
+
 Rails/HttpPositionalArguments:
   Enabled: true
   Include:
