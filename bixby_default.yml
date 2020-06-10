@@ -698,9 +698,6 @@ Lint/EmptyInterpolation:
 Lint/EmptyWhen:
   Enabled: true
 
-Style/EndBlock:
-  Enabled: true
-
 Lint/EnsureReturn:
   Enabled: true
 
