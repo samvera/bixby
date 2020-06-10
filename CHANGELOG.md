@@ -1,11 +1,20 @@
 # Changelog
 
-## [3.0.0.pre2](https://github.com/samvera-labs/bixby/tree/3.0.0.pre2) (2020-06-10)
+## [3.0.0.pre3](https://github.com/samvera-labs/bixby/tree/3.0.0.pre3) (2020-06-10)
 
-[Full Changelog](https://github.com/samvera-labs/bixby/compare/v3.0.0.pre1...3.0.0.pre2)
+[Full Changelog](https://github.com/samvera-labs/bixby/compare/v3.0.0.pre2...3.0.0.pre3)
 
 **Merged pull requests:**
 
+- Disable Rails/DynamicFindBy [\#41](https://github.com/samvera-labs/bixby/pull/41) ([bess](https://github.com/bess))
+
+## [v3.0.0.pre2](https://github.com/samvera-labs/bixby/tree/v3.0.0.pre2) (2020-06-10)
+
+[Full Changelog](https://github.com/samvera-labs/bixby/compare/v3.0.0.pre1...v3.0.0.pre2)
+
+**Merged pull requests:**
+
+- Prep for 3.0.0.pre2 release [\#40](https://github.com/samvera-labs/bixby/pull/40) ([bess](https://github.com/bess))
 - 3.0.0 fixup [\#39](https://github.com/samvera-labs/bixby/pull/39) ([no-reply](https://github.com/no-reply))
 
 ## [v3.0.0.pre1](https://github.com/samvera-labs/bixby/tree/v3.0.0.pre1) (2020-06-10)
@@ -90,7 +99,6 @@
 - Remove Lint/InvalidCharacterLiteral, fixes \#15 [\#16](https://github.com/samvera-labs/bixby/pull/16) ([hackmastera](https://github.com/hackmastera))
 - Update READEME.md to discuss versioning strategy [\#13](https://github.com/samvera-labs/bixby/pull/13) ([no-reply](https://github.com/no-reply))
 - Lock versions to `rubocop` 0.50.0 and `rubocop-rspec` 1.18.0 [\#12](https://github.com/samvera-labs/bixby/pull/12) ([no-reply](https://github.com/no-reply))
-- Prepare Release v0.3.0 [\#9](https://github.com/samvera-labs/bixby/pull/9) ([no-reply](https://github.com/no-reply))
 
 ## [v0.3.1](https://github.com/samvera-labs/bixby/tree/v0.3.1) (2017-10-04)
 
@@ -110,6 +118,7 @@
 
 **Merged pull requests:**
 
+- Prepare Release v0.3.0 [\#9](https://github.com/samvera-labs/bixby/pull/9) ([no-reply](https://github.com/no-reply))
 - Upgrade for RuboCop 0.50.0 compatibility [\#8](https://github.com/samvera-labs/bixby/pull/8) ([no-reply](https://github.com/no-reply))
 - Allow deeper group nesting in RSpec [\#7](https://github.com/samvera-labs/bixby/pull/7) ([no-reply](https://github.com/no-reply))
 
