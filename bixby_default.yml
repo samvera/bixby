@@ -24,9 +24,6 @@ Style/AndOr:
 Style/ArrayJoin:
   Enabled: true
 
-Style/AsciiComments:
-  Enabled: true
-
 Style/Attr:
   Enabled: true
 
