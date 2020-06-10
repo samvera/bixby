@@ -16,6 +16,12 @@ Rails/Delegate:
 Rails/DelegateAllowBlank:
   Enabled: true
 
+# This one breaks things unexpectedly.
+# E.g., it changes ISO_639.find_by_code(language_code) to ISO_639.find_by(code: language_code)
+# which results in an error. 
+Rails/DynamicFindBy:
+  Enabled: false
+
 Rails/EnumUniqueness:
   Enabled: true
 
