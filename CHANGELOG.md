@@ -1,11 +1,21 @@
 # Changelog
 
-## [3.0.0](https://github.com/samvera-labs/bixby/tree/3.0.0) (2020-06-10)
+## [3.0.1](https://github.com/samvera-labs/bixby/tree/3.0.1) (2020-06-16)
 
-[Full Changelog](https://github.com/samvera-labs/bixby/compare/v3.0.0.pre3...3.0.0)
+[Full Changelog](https://github.com/samvera-labs/bixby/compare/v3.0.0...3.0.1)
 
 **Merged pull requests:**
 
+- Removes IndentationConsistency supported styles [\#45](https://github.com/samvera-labs/bixby/pull/45) ([rotated8](https://github.com/rotated8))
+- allow non-ascii characters in comments [\#44](https://github.com/samvera-labs/bixby/pull/44) ([no-reply](https://github.com/no-reply))
+
+## [v3.0.0](https://github.com/samvera-labs/bixby/tree/v3.0.0) (2020-06-10)
+
+[Full Changelog](https://github.com/samvera-labs/bixby/compare/v3.0.0.pre3...v3.0.0)
+
+**Merged pull requests:**
+
+- Prep for 3.0.0 release [\#43](https://github.com/samvera-labs/bixby/pull/43) ([bess](https://github.com/bess))
 - Prep for 3.0.0.pre3 release [\#42](https://github.com/samvera-labs/bixby/pull/42) ([bess](https://github.com/bess))
 
 ## [v3.0.0.pre3](https://github.com/samvera-labs/bixby/tree/v3.0.0.pre3) (2020-06-10)
@@ -78,6 +88,7 @@
 **Merged pull requests:**
 
 - Bixby 2.0 [\#28](https://github.com/samvera-labs/bixby/pull/28) ([no-reply](https://github.com/no-reply))
+- Bump version to 1.0.0-rc1 [\#21](https://github.com/samvera-labs/bixby/pull/21) ([no-reply](https://github.com/no-reply))
 
 ## [1.0.0](https://github.com/samvera-labs/bixby/tree/1.0.0) (2018-02-13)
 
@@ -102,7 +113,6 @@
 
 **Merged pull requests:**
 
-- Bump version to 1.0.0-rc1 [\#21](https://github.com/samvera-labs/bixby/pull/21) ([no-reply](https://github.com/no-reply))
 - Support newer versions of `rubocop`, `rubocop-rspec`, and Ruby [\#20](https://github.com/samvera-labs/bixby/pull/20) ([no-reply](https://github.com/no-reply))
 - Remove Lint/InvalidCharacterLiteral, fixes \#15 [\#16](https://github.com/samvera-labs/bixby/pull/16) ([hackmastera](https://github.com/hackmastera))
 - Update READEME.md to discuss versioning strategy [\#13](https://github.com/samvera-labs/bixby/pull/13) ([no-reply](https://github.com/no-reply))
