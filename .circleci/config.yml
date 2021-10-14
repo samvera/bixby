@@ -19,6 +19,17 @@ jobs:
       ruby_version: << parameters.ruby_version >>
 
     steps:
+      - checkout
+
+      - run:
+          name: Check for 'master' branch
+          command: |
+              git fetch --all --quiet --prune --prune-tags
+              if [[ -n "$(git branch --all --list master */master)" ]]; then
+                  echo "A branch named 'master' was found. Please remove it."
+                  echo "$(git branch --all --list master */master)"
+              fi
+              [[ -z "$(git branch --all --list master */master)" ]]
       - samvera/cached_checkout
 
       - samvera/bundle_for_gem:
@@ -52,4 +63,3 @@ workflows:
           project: bixby
           name: ruby2-7
           ruby_version: 2.7.1
-
