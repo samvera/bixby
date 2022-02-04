@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
   spec.version       = '3.0.2'
   spec.license       = 'Apache-2.0'
 
-  spec.required_ruby_version = '>= 2.5.0'
+  spec.required_ruby_version = '>= 2.6'
 
   spec.add_dependency 'rubocop', '>= 1', '< 2'
   spec.add_dependency 'rubocop-ast'
