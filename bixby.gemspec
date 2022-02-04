@@ -15,11 +15,10 @@ Gem::Specification.new do |spec|
   spec.version       = '3.0.2'
   spec.license       = 'Apache-2.0'
 
-  spec.add_dependency 'rubocop', '0.85.1'
-  # Added to prevent downstream breakage; When we update the above
-  # Rubocop version, we will want to revisit this dependency.  Either
-  # changing the version range OR removing it.
-  spec.add_dependency 'rubocop-ast', '~> 0.3.0'
+  spec.required_ruby_version = '>= 2.5.0'
+
+  spec.add_dependency 'rubocop', '>= 1', '< 2'
+  spec.add_dependency 'rubocop-ast'
   spec.add_dependency 'rubocop-performance'
   spec.add_dependency 'rubocop-rails'
   spec.add_dependency 'rubocop-rspec'

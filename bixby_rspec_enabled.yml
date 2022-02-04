@@ -1,9 +1,8 @@
 ---
 require: rubocop-rspec
 
-AllCops:
-  RSpec:
-    Patterns:
+RSpec:
+  Include:
     - _spec.rb
     - "(?:^|/)spec/"
 
@@ -25,7 +24,6 @@ RSpec/DescribeMethod:
 
 RSpec/EmptyExampleGroup:
   Enabled: true
-  CustomIncludeMethods: []
 
 RSpec/ExampleLength:
   Enabled: true
