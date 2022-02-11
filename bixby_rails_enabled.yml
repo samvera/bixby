@@ -1,96 +1,15 @@
 ---
 require: rubocop-rails
 
-Rails:
-  Enabled: true
-
-Rails/ActionFilter:
-  Enabled: true
-
-Rails/Date:
-  Enabled: true
-
-Rails/Delegate:
-  Enabled: true
-
-Rails/DelegateAllowBlank:
-  Enabled: true
-
-# This one breaks things unexpectedly.
-# E.g., it changes ISO_639.find_by_code(language_code) to ISO_639.find_by(code: language_code)
-# which results in an error. 
-Rails/DynamicFindBy:
-  Enabled: false
-
-Rails/EnumUniqueness:
-  Enabled: true
-
-Rails/Exit:
-  Enabled: true
-
 Rails/FilePath:
   Enabled: true
   EnforcedStyle: arguments
 
-Rails/FindBy:
-  Enabled: true
-
-Rails/FindEach:
-  Enabled: true
-
-Rails/HasAndBelongsToMany:
-  Enabled: true
-
 Rails/HelperInstanceVariable:
   Enabled: false
-
-Rails/HttpPositionalArguments:
-  Enabled: true
-  Include:
-    - 'spec/**/*'
-    - 'test/**/*'
 
 Rails/InverseOf:
   Enabled: false
 
 Rails/LexicallyScopedActionFilter:
   Enabled: false
-
-Rails/NotNullColumn:
-  Enabled: true
-
-Rails/Output:
-  Enabled: true
-
-Rails/OutputSafety:
-  Enabled: true
-
-Rails/PluralizationGrammar:
-  Enabled: true
-
-Rails/ReadWriteAttribute:
-  Enabled: true
-
-Rails/RequestReferer:
-  Enabled: true
-
-Rails/ReversibleMigration:
-  Enabled: true
-
-Rails/SafeNavigation:
-  Enabled: true
-
-Rails/ScopeArgs:
-  Enabled: true
-
-Rails/TimeZone:
-  Enabled: true
-
-Rails/UniqBeforePluck:
-  Enabled: true
-
-Rails/SkipsModelValidations:
-  Enabled: true
-
-Rails/Validation:
-  Enabled: true
