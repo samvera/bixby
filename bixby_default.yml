@@ -162,9 +162,6 @@ Style/MethodCallWithoutArgsParentheses:
 Style/MethodDefParentheses:
   Enabled: true
 
-Style/MethodMissingSuper:
-  Enabled: true
-
 Style/MissingRespondToMissing:
   Enabled: true
 
@@ -726,6 +723,9 @@ Lint/LiteralInInterpolation:
 Lint/Loop:
   Enabled: true
 
+Lint/MissingSuper:
+  Enabled: true
+
 Lint/MultipleComparison:
   Enabled: true
 
@@ -795,7 +795,7 @@ Lint/UselessAccessModifier:
 Lint/UselessAssignment:
   Enabled: true
 
-Lint/UselessComparison:
+Lint/BinaryOperatorWithIdenticalOperands:
   Enabled: true
 
 Lint/UselessElseWithoutRescue:
