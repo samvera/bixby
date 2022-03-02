@@ -603,12 +603,13 @@ Naming/VariableName:
 
 Naming/VariableNumber:
   Enabled: true
+  CheckSymbols: false
 
 #################### Metrics ###############################
 
 Metrics/AbcSize:
   Enabled: true
-  Max: 28
+  Max: 32
 
 Metrics/BlockNesting:
   Enabled: true
@@ -623,6 +624,7 @@ Metrics/ModuleLength:
 
 Metrics/CyclomaticComplexity:
   Enabled: true
+  Max: 10
 
 Metrics/MethodLength:
   Enabled: true
@@ -640,6 +642,7 @@ Metrics/ParameterLists:
 
 Metrics/PerceivedComplexity:
   Enabled: true
+  Max: 11
 
 #################### Lint ##################################
 ### Warnings
