@@ -1,7 +1,7 @@
 require: rubocop-performance
 
 AllCops:
-  TargetRubyVersion: 2.4
+  TargetRubyVersion: 2.6
   DisabledByDefault: true
   DisplayCopNames: true
   Exclude:
@@ -160,9 +160,6 @@ Style/MethodCallWithoutArgsParentheses:
   Enabled: true
 
 Style/MethodDefParentheses:
-  Enabled: true
-
-Style/MethodMissingSuper:
   Enabled: true
 
 Style/MissingRespondToMissing:
@@ -726,6 +723,9 @@ Lint/LiteralInInterpolation:
 Lint/Loop:
   Enabled: true
 
+Lint/MissingSuper:
+  Enabled: true
+
 Lint/MultipleComparison:
   Enabled: true
 
@@ -795,7 +795,7 @@ Lint/UselessAccessModifier:
 Lint/UselessAssignment:
   Enabled: true
 
-Lint/UselessComparison:
+Lint/BinaryOperatorWithIdenticalOperands:
   Enabled: true
 
 Lint/UselessElseWithoutRescue:
