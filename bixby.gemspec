@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.authors       = ['Tom Johnson']
+  spec.authors       = ['Tamsin Johnson']
   spec.email         = ['johnson.tom@gmail.com']
   spec.description   = 'A Style Configuration for RuboCop'
   spec.summary       = 'This is the recommended style configuration for use ' \
                        'by Samvera Community projects.'
-  spec.homepage      = 'http://github.com/samvera-labs/bixby'
+  spec.homepage      = 'http://github.com/samvera/bixby'
   spec.files         = `git ls-files`.split($OUTPUT_RECORD_SEPARATOR)
 
   spec.name          = 'bixby'

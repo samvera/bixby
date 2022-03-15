@@ -4,12 +4,33 @@ Bixby: I'd buy that for a dollar!
 [![Apache 2.0 License](http://img.shields.io/badge/APACHE2-license-blue.svg)](./LICENSE)
 [![Gem Version](https://badge.fury.io/rb/bixby.svg)](https://badge.fury.io/rb/bixby)
 
+[Jump in on Slack](http://slack.samvera.org/)
 
 <p align="left">
   <img src="https://raw.githubusercontent.com/curationexperts/hycop/master/logo/murphy.jpg" alt="Murphy Sketch"/>
 </p>
 
-RuboCop Defaults for Samvera Community
+# What is Bixby?
+
+Bixby is a Ruby Gem containing the default configuration settings for [RuboCop](https://github.com/rubocop/rubocop) used to enforce common Ruby style guidelines across Samvera community projects.
+
+## Product Owner & Maintenance
+
+Bixby is a Core Component of the Samvera community. The documentation for what this means can be found [here](http://samvera.github.io/core_components.html#requirements-for-a-core-component).
+
+### Product Owner
+
+[jrgriffiniii](https://github.com/jrgriffiniii)
+
+# Help
+
+The Samvera Community is here to help. Please see our [support guide](./.github/SUPPORT.md).
+
+See the Samvera Confluence for information at the architecture level: <https://samvera.atlassian.net/wiki/home>
+
+Additionally, new adopters and potential adopters may find the pages here useful: <https://samvera.org/>
+
+Further questions? [Get in touch](https://samvera.atlassian.net/wiki/spaces/samvera/pages/405211682/Getting+Started+in+the+Samvera+Community)
 
 ## To Use This
 
@@ -43,7 +64,7 @@ Bixby is available under [the Apache 2.0 license](LICENSE.md).
 1. Increase the same version number in `.github_changelog_generator`
 1. Update `CHANGELOG.md` by running this command:
   ```
-  github_changelog_generator --user samvera-labs --project bixby --token YOUR_GITHUB_TOKEN_HERE
+  github_changelog_generator --user samvera --project bixby --token YOUR_GITHUB_TOKEN_HERE
   ```
 1. Commit these changes to the master branch
 1. Run `rake release`
@@ -56,8 +77,8 @@ This repository follows the [Samvera Community Code of Conduct](https://samvera.
 
 ## Acknowledgments
 
-This software has been developed by and is brought to you by the Samvera community.  Learn more at the
-[Samvera Community website](http://projecthydra.org/).
+The Alex J. Murphy sketch "logo" is courtesy of [acid_lich](https://www.instagram.com/acid_lich/), all rights reserved.
 
-The Alex J. Murphy sketch "logo" is courtesy of [acid_lich](https://www.instagram.com/acid_lich/), all
-rights reserved.
+This software has been developed by and is brought to you by the Samvera community.  Learn more at the [Samvera Community website](https://samvera.org/).
+
+![Samvera Logo](https://samvera.atlassian.net/wiki/download/attachments/1918631965/samvera-fall-TM-220w.png?api=v2)
