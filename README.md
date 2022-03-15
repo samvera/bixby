@@ -7,7 +7,7 @@ Bixby: I'd buy that for a dollar!
 [Jump in on Slack](http://slack.samvera.org/)
 
 <p align="left">
-  <img src="https://raw.githubusercontent.com/curationexperts/hycop/master/logo/murphy.jpg" alt="Murphy Sketch"/>
+  <img src="logo/murphy.jpg" alt="Murphy Sketch"/>
 </p>
 
 # What is Bixby?
@@ -66,14 +66,14 @@ Bixby is available under [the Apache 2.0 license](LICENSE.md).
   ```
   github_changelog_generator --user samvera --project bixby --token YOUR_GITHUB_TOKEN_HERE
   ```
-1. Commit these changes to the master branch
+1. Commit these changes to the main branch
 1. Run `rake release`
 
 ## Contributing
 
 If you're working on a PR for this project, create a feature branch off of `main`.
 
-This repository follows the [Samvera Community Code of Conduct](https://samvera.atlassian.net/wiki/spaces/samvera/pages/405212316/Code+of+Conduct) and [language recommendations](https://github.com/samvera/maintenance/blob/master/templates/CONTRIBUTING.md#language).  Please ***do not*** create a branch called `master` for this repository or as part of your pull request; the branch will either need to be removed or renamed before it can be considered for inclusion in the code base and history of this repository.
+This repository follows the [Samvera Community Code of Conduct](https://samvera.atlassian.net/wiki/spaces/samvera/pages/405212316/Code+of+Conduct) and [language recommendations](https://github.com/samvera/maintenance/blob/main/templates/CONTRIBUTING.md#language).  Please ***do not*** create a branch called `master` for this repository or as part of your pull request; the branch will either need to be removed or renamed before it can be considered for inclusion in the code base and history of this repository.
 
 ## Acknowledgments
 
