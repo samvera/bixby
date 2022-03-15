@@ -1,7 +1,7 @@
 require: rubocop-performance
 
 AllCops:
-  TargetRubyVersion: 2.4
+  TargetRubyVersion: 2.5
   DisabledByDefault: true
   DisplayCopNames: true
   Exclude:
@@ -160,9 +160,6 @@ Style/MethodCallWithoutArgsParentheses:
   Enabled: true
 
 Style/MethodDefParentheses:
-  Enabled: true
-
-Style/MethodMissingSuper:
   Enabled: true
 
 Style/MissingRespondToMissing:
@@ -606,12 +603,13 @@ Naming/VariableName:
 
 Naming/VariableNumber:
   Enabled: true
+  CheckSymbols: false
 
 #################### Metrics ###############################
 
 Metrics/AbcSize:
   Enabled: true
-  Max: 28
+  Max: 32
 
 Metrics/BlockNesting:
   Enabled: true
@@ -626,6 +624,7 @@ Metrics/ModuleLength:
 
 Metrics/CyclomaticComplexity:
   Enabled: true
+  Max: 10
 
 Metrics/MethodLength:
   Enabled: true
@@ -643,6 +642,7 @@ Metrics/ParameterLists:
 
 Metrics/PerceivedComplexity:
   Enabled: true
+  Max: 11
 
 #################### Lint ##################################
 ### Warnings
@@ -726,6 +726,9 @@ Lint/LiteralInInterpolation:
 Lint/Loop:
   Enabled: true
 
+Lint/MissingSuper:
+  Enabled: true
+
 Lint/MultipleComparison:
   Enabled: true
 
@@ -795,7 +798,7 @@ Lint/UselessAccessModifier:
 Lint/UselessAssignment:
   Enabled: true
 
-Lint/UselessComparison:
+Lint/BinaryOperatorWithIdenticalOperands:
   Enabled: true
 
 Lint/UselessElseWithoutRescue:
