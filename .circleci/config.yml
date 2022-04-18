@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  samvera: samvera/circleci-orb@1
+  samvera: samvera/circleci-orb@1.0
 
 jobs:
   bundle_lint_test:
@@ -12,7 +12,7 @@ jobs:
         type: string
       bundler_version:
         type: string
-        default: 2.3.6
+        default: 2.3.11
 
     executor:
       name: 'samvera/ruby'
@@ -44,15 +44,44 @@ workflows:
     jobs:
       - bundle_lint_test:
           project: bixby
-          name: ruby2-6
-          ruby_version: 2.6.9
-
-      - bundle_lint_test:
-          project: bixby
-          name: ruby2-7
-          ruby_version: 2.7.5
-
+          name: ruby3-1
+          ruby_version: 3.1.1
       - bundle_lint_test:
           project: bixby
           name: ruby3-0
           ruby_version: 3.0.3
+      - bundle_lint_test:
+          project: bixby
+          name: ruby2-7
+          ruby_version: 2.7.5
+      - bundle_lint_test:
+          project: bixby
+          name: ruby2-6
+          ruby_version: 2.6.9
+
+  nightly:
+    triggers:
+      - schedule:
+          cron: "0 0 * * *"
+          filters:
+            branches:
+              only:
+                - main
+    jobs:
+      - bundle_lint_test:
+          project: bixby
+          name: ruby3-1
+          ruby_version: 3.1.1
+      - bundle_lint_test:
+          project: bixby
+          name: ruby3-0
+          ruby_version: 3.0.3
+      - bundle_lint_test:
+          project: bixby
+          name: ruby2-7
+          ruby_version: 2.7.5
+      - bundle_lint_test:
+          project: bixby
+          name: ruby2-6
+          ruby_version: 2.6.9
+
