@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = '>= 2.6'
 
-  spec.add_dependency 'rubocop', '>= 1', '< 2'
+  spec.add_dependency 'rubocop', '1.28.2'
   spec.add_dependency 'rubocop-ast'
   spec.add_dependency 'rubocop-performance'
   spec.add_dependency 'rubocop-rails'
