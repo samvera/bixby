@@ -1,7 +1,7 @@
 require: rubocop-performance
 
 AllCops:
-  TargetRubyVersion: 2.5
+  TargetRubyVersion: 2.6
   DisabledByDefault: true
   DisplayCopNames: true
   Exclude:
@@ -799,9 +799,6 @@ Lint/UselessAssignment:
   Enabled: true
 
 Lint/BinaryOperatorWithIdenticalOperands:
-  Enabled: true
-
-Lint/UselessElseWithoutRescue:
   Enabled: true
 
 Lint/UselessSetterCall:
