@@ -1,5 +1,30 @@
 # Changelog
 
+## [5.0.2](https://github.com/samvera/bixby/tree/v5.0.2) (2022-05-11)
+
+[Full Changelog](https://github.com/samvera/bixby/compare/v5.0.1...v5.0.2)
+
+**Merged pull requests:**
+
+- reinstate ruby 2.5 support [\#75](https://github.com/samvera/bixby/pull/75) ([no-reply](https://github.com/no-reply))
+
+## [5.0.1](https://github.com/samvera/bixby/tree/v5.0.1) (2022-05-09)
+
+[Full Changelog](https://github.com/samvera/bixby/compare/v5.0.0...v5.0.1)
+
+**Merged pull requests:**
+
+- Locks down the version of Rubocop to a working image. [\#73](https://github.com/samvera/bixby/pull/73) ([bwatson78](https://github.com/bwatson78))
+
+## [5.0.0](https://github.com/samvera/bixby/tree/v5.0.0) (2022-05-09)
+
+[Full Changelog](https://github.com/samvera/bixby/compare/v4.0.0...v5.0.0)
+
+**Merged pull requests:**
+
+- Introduces a configuration for scheduled, nightly test suite executions on CircleCI [\#70](https://github.com/samvera/bixby/pull/70) ([jrgriffiniii](https://github.com/jrgriffiniii))
+- Removes Lint/UselessElseWithoutRescue cop. [\#72](https://github.com/samvera/bixby/pull/72) ([bwatson78](https://github.com/bwatson78))
+
 ## [4.0.0](https://github.com/samvera/bixby/tree/v4.0.0) (2022-03-30)
 
 [Full Changelog](https://github.com/samvera/bixby/compare/v3.0.2...v4.0.0)
