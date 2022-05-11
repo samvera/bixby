@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.name          = 'bixby'
   spec.require_paths = ['lib']
 
-  spec.version       = '5.0.0'
+  spec.version       = '5.0.2'
   spec.license       = 'Apache-2.0'
 
   spec.required_ruby_version = '>= 2.5'
