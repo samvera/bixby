@@ -58,6 +58,10 @@ workflows:
           project: bixby
           name: ruby2-6
           ruby_version: 2.6.9
+      - bundle_lint_test:
+          project: bixby
+          name: ruby2-5
+          ruby_version: 2.5.9
 
   nightly:
     triggers:
@@ -84,4 +88,7 @@ workflows:
           project: bixby
           name: ruby2-6
           ruby_version: 2.6.9
-
+      - bundle_lint_test:
+          project: bixby
+          name: ruby2-5
+          ruby_version: 2.5.9
