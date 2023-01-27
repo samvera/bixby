@@ -8,6 +8,7 @@ Gem::Specification.new do |spec|
                        'by Samvera Community projects.'
   spec.homepage      = 'http://github.com/samvera/bixby'
   spec.files         = `git ls-files`.split($OUTPUT_RECORD_SEPARATOR)
+  spec.metadata      = { "rubygems_mfa_required" => "true" }
 
   spec.name          = 'bixby'
   spec.require_paths = ['lib']
